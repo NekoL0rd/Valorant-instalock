@@ -21,6 +21,7 @@ print("Brimstone = 8 | Cypher = 19")
 print("Astra = 9     | Chamber = 20")
 print("Viper = 10    | Deadlock = 21")
 print("Harbour = 11  | Sage = 22")
+print("Will = 23 |")
 
 user_choice = int(input("Agent: "))
 if user_choice > int(22):
@@ -29,7 +30,7 @@ if user_choice > int(22):
 
 print("If you have problems, press and hold '#' to end")
 list = ["k","reyna","jett","raze","neon","phoenix","yoru","omen","brim","astra","viper","harbour","kayo","sova","fade","skye","breach","gekko","kj","cypher",
-        "chamber","deadlock","sage"]
+        "chamber","deadlock","sage","Will"]
 
 while keyboard.is_pressed("#") == False:
     locate = pyautogui.locateOnScreen("pic/" + list[user_choice] + ".png", confidence=0.99)
